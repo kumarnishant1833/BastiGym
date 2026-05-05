@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Basti Gym & Fitness Club — Transform Your Body, Transform Your Life. Gym in Gandhi Nagar, Basti, Uttar Pradesh." />
+  <title>Basti Gym &amp; Fitness Club | Home</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons (Font Awesome CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo">
+        <span class="logo-main">BASTI<span>&nbsp;GYM</span></span>
+        <span class="logo-sub">&amp; Fitness Club</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- CTA + Hamburger -->
+      <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Join Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:12px;">Join Now</a>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-labelledby="hero-heading">
+
+    <div class="hero-bg"></div>
+
+    <!-- Right image panel — replace src with a real gym photo -->
+    <div class="hero-image-panel">
+      <!-- 📸 DROP YOUR IMAGE: assets/images/hero-main.jpg (recommended 1200×900px, athlete or gym floor) -->
+      <img
+        src="assets/images/hero-main.jpg"
+        alt="Basti Gym & Fitness Club — Training Floor"
+        class="responsive-img"
+        loading="eager"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+      />
+      <!-- Fallback shown only if image file is missing -->
+      <div class="img-fallback" style="display:none;width:100%;height:100%;align-items:center;justify-content:center;flex-direction:column;gap:10px;background:linear-gradient(160deg,#1a0808,#0d0d0d);">
+        <i class="fas fa-dumbbell" style="font-size:2.5rem;color:var(--red);opacity:0.4;"></i>
+        <p style="font-family:var(--font-sub);font-size:0.7rem;letter-spacing:3px;color:var(--grey);text-transform:uppercase;">Add: assets/images/hero-main.jpg</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+
+        <span class="hero-label">Est. 2018 &mdash; Basti, U.P.</span>
+
+        <h1 id="hero-heading">
+          BASTI<br/>
+          <span class="accent">GYM</span><br/>
+          &amp; FITNESS
+        </h1>
+
+        <p class="hero-tagline">Transform Your Body,<br/>Transform Your Life.</p>
+
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fas fa-fire"></i> Join Now
+          </a>
+          <a href="services.html" class="btn btn-outline">
+            Our Services
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="num" data-target="500" data-suffix="+">500+</div>
+            <div class="stat-label">Members</div>
+          </div>
+          <div class="stat-item">
+            <div class="num" data-target="7" data-suffix="">7</div>
+            <div class="stat-label">Years Strong</div>
+          </div>
+          <div class="stat-item">
+            <div class="num" data-target="8" data-suffix="">8</div>
+            <div class="stat-label">Expert Trainers</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT PREVIEW
+  ══════════════════════════════════════════ -->
+  <section class="about-preview section-padding" id="about-preview">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Visual -->
+        <div class="about-visual reveal-left">
+          <div class="about-img-wrap">
+            <!-- 📸 DROP YOUR IMAGE: assets/images/gym-interior.jpg (recommended 800×1000px, wide gym shot) -->
+            <img
+              src="assets/images/gym-interior.jpg"
+              alt="Basti Gym & Fitness Club — Interior View"
+              class="responsive-img"
+              loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            />
+            <div class="img-fallback" style="display:none;width:100%;min-height:380px;align-items:center;justify-content:center;flex-direction:column;gap:10px;background:linear-gradient(160deg,#1c1c1c,#111);">
+              <i class="fas fa-camera" style="font-size:2rem;color:var(--red);opacity:0.4;"></i>
+              <p style="font-family:var(--font-sub);font-size:0.7rem;letter-spacing:3px;color:var(--grey);text-transform:uppercase;">Add: assets/images/gym-interior.jpg</p>
+            </div>
+          </div>
+          <div class="about-img-badge">
+            <span class="years">7+</span>
+            <span class="yrs-label">Years of Excellence</span>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text reveal-right">
+          <div class="section-header">
+            <span class="label">Who We Are</span>
+            <h2>Built for<br/><span class="text-red">Champions</span></h2>
+            <p>Founded in 2018, Basti Gym &amp; Fitness Club is the premier fitness destination in Gandhi Nagar, Basti — equipped with state-of-the-art machines, expert trainers, and a community that pushes you further every day.</p>
+          </div>
+
+          <div class="features">
+            <div class="feature-item"><span class="feature-dot"></span> World-class equipment &amp; facilities</div>
+            <div class="feature-item"><span class="feature-dot"></span> Certified &amp; experienced trainers</div>
+            <div class="feature-item"><span class="feature-dot"></span> Dedicated women's fitness programs</div>
+            <div class="feature-item"><span class="feature-dot"></span> Nutrition counselling &amp; diet plans</div>
+            <div class="feature-item"><span class="feature-dot"></span> Flexible timings — 5 AM to 10 PM</div>
+          </div>
+
+          <a href="about.html" class="btn btn-outline-red" style="margin-top:32px;">
+            Learn Our Story <i class="fas fa-arrow-right" style="font-size:0.8rem;"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SERVICES HIGHLIGHT
+  ══════════════════════════════════════════ -->
+  <section class="services-highlight section-padding" id="services-highlight">
+    <div class="container">
+
+      <div class="section-header centered reveal">
+        <span class="label">What We Offer</span>
+        <h2>Our <span class="text-red">Services</span></h2>
+        <p>From beginner to elite athlete — we have a program tailored for every fitness level and goal.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Card 1 -->
+        <div class="service-card reveal delay-1">
+          <span class="service-icon">🏋️</span>
+          <h3>Gym Training</h3>
+          <p>Full access to premium cardio and strength equipment. Structured workout plans for all fitness levels.</p>
+          <a href="services.html" class="learn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card reveal delay-2">
+          <span class="service-icon">🎯</span>
+          <h3>Personal Training</h3>
+          <p>One-on-one sessions with certified coaches dedicated to your specific goals and progress.</p>
+          <a href="services.html" class="learn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card reveal delay-3">
+          <span class="service-icon">⚡</span>
+          <h3>CrossFit</h3>
+          <p>High-intensity functional training to build power, endurance, and athleticism in every session.</p>
+          <a href="services.html" class="learn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card reveal delay-1">
+          <span class="service-icon">👩</span>
+          <h3>Women Fitness</h3>
+          <p>Inclusive, safe, and empowering programs designed specifically for women — body and mind.</p>
+          <a href="services.html" class="learn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card reveal delay-2">
+          <span class="service-icon">🥗</span>
+          <h3>Nutrition Guidance</h3>
+          <p>Personalised diet plans and nutrition advice crafted by our in-house wellness experts.</p>
+          <a href="services.html" class="learn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card reveal delay-3">
+          <span class="service-icon">🧘</span>
+          <h3>Recovery &amp; Yoga</h3>
+          <p>Wind down with yoga and mobility sessions that enhance recovery and mental clarity.</p>
+          <a href="services.html" class="learn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:48px;" class="reveal">
+        <a href="services.html" class="btn btn-primary">View All Services</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════════ -->
+  <section class="testimonials section-padding" id="testimonials">
+    <div class="container">
+
+      <div class="section-header centered reveal">
+        <span class="label">Success Stories</span>
+        <h2>What Our <span class="text-red">Members</span> Say</h2>
+        <p>Real results, real people. Hear from the Basti Gym family.</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal delay-1">
+          <span class="quote-mark">"</span>
+          <span class="stars">★★★★★</span>
+          <p>Basti Gym completely changed my life. In just 6 months I lost 10 kg and built muscle I never thought possible. The trainers are exceptional and the environment keeps you motivated every day.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div>
+              <span class="author-name">Yashu Gupta</span>
+              <span class="author-role">Lost 10 kg in 6 months</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-2">
+          <span class="quote-mark">"</span>
+          <span class="stars">★★★★★</span>
+          <p>The women's fitness program here is absolutely top-notch. I felt welcomed from day one. The female trainers are knowledgeable, encouraging, and truly invested in your progress.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">PS</div>
+            <div>
+              <span class="author-name">Priya Sharma</span>
+              <span class="author-role">Women's Fitness Member</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-3">
+          <span class="quote-mark">"</span>
+          <span class="stars">★★★★★</span>
+          <p>I have been to many gyms but Basti Gym is on another level. The equipment is modern, trainers are professional and the CrossFit sessions are intense in the best possible way!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AS</div>
+            <div>
+              <span class="author-name">Prateek Kumar</span>
+              <span class="author-role">CrossFit Enthusiast</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       GALLERY
+  ══════════════════════════════════════════ -->
+  <section class="gallery section-padding" id="gallery">
+    <div class="container">
+
+      <div class="section-header centered reveal">
+        <span class="label">Our Space</span>
+        <h2>Inside <span class="text-red">Basti Gym</span></h2>
+        <p>A world-class facility built to help you perform at your peak.</p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- 📸 gallery-weight-floor.jpg — Weight training area (spans 2 cols × 2 rows) -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/gallery-weight-floor.jpg"
+            alt="Basti Gym — Weight Training Floor"
+            class="responsive-img"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          />
+          <div class="img-fallback" style="display:none;width:100%;height:100%;min-height:200px;align-items:center;justify-content:center;flex-direction:column;gap:8px;background:linear-gradient(160deg,#181818,#111);border:1px solid var(--border);">
+            <i class="fas fa-dumbbell" style="font-size:1.8rem;color:var(--red);opacity:0.35;"></i>
+            <p style="font-family:var(--font-sub);font-size:0.65rem;letter-spacing:2px;color:var(--grey);text-transform:uppercase;">gallery-weight-floor.jpg</p>
+          </div>
+          <div class="gallery-overlay"><span>Weight Floor</span></div>
+        </div>
+
+        <!-- 📸 gallery-cardio.jpg — Cardio zone, treadmills / bikes -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/gallery-cardio.jpg"
+            alt="Basti Gym — Cardio Zone"
+            class="responsive-img"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          />
+          <div class="img-fallback" style="display:none;width:100%;height:100%;min-height:200px;align-items:center;justify-content:center;flex-direction:column;gap:8px;background:linear-gradient(160deg,#181818,#111);border:1px solid var(--border);">
+            <i class="fas fa-bicycle" style="font-size:1.8rem;color:var(--red);opacity:0.35;"></i>
+            <p style="font-family:var(--font-sub);font-size:0.65rem;letter-spacing:2px;color:var(--grey);text-transform:uppercase;">gallery-cardio.jpg</p>
+          </div>
+          <div class="gallery-overlay"><span>Cardio Zone</span></div>
+        </div>
+
+        <!-- 📸 gallery-crossfit.jpg — CrossFit / functional training area -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/gallery-crossfit.jpg"
+            alt="Basti Gym — CrossFit Area"
+            class="responsive-img"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          />
+          <div class="img-fallback" style="display:none;width:100%;height:100%;min-height:200px;align-items:center;justify-content:center;flex-direction:column;gap:8px;background:linear-gradient(160deg,#181818,#111);border:1px solid var(--border);">
+            <i class="fas fa-person-running" style="font-size:1.8rem;color:var(--red);opacity:0.35;"></i>
+            <p style="font-family:var(--font-sub);font-size:0.65rem;letter-spacing:2px;color:var(--grey);text-transform:uppercase;">gallery-crossfit.jpg</p>
+          </div>
+          <div class="gallery-overlay"><span>CrossFit Area</span></div>
+        </div>
+
+        <!-- 📸 gallery-women.jpg — Women's dedicated fitness section (spans 2 cols) -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/gallery-women.jpg"
+            alt="Basti Gym — Women's Fitness Section"
+            class="responsive-img"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          />
+          <div class="img-fallback" style="display:none;width:100%;height:100%;min-height:200px;align-items:center;justify-content:center;flex-direction:column;gap:8px;background:linear-gradient(160deg,#181818,#111);border:1px solid var(--border);">
+            <i class="fas fa-venus" style="font-size:1.8rem;color:var(--red);opacity:0.35;"></i>
+            <p style="font-family:var(--font-sub);font-size:0.65rem;letter-spacing:2px;color:var(--grey);text-transform:uppercase;">gallery-women.jpg</p>
+          </div>
+          <div class="gallery-overlay"><span>Women's Section</span></div>
+        </div>
+
+        <!-- 📸 gallery-yoga.jpg — Yoga / recovery studio -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/gallery-yoga.jpg"
+            alt="Basti Gym — Yoga Studio"
+            class="responsive-img"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          />
+          <div class="img-fallback" style="display:none;width:100%;height:100%;min-height:200px;align-items:center;justify-content:center;flex-direction:column;gap:8px;background:linear-gradient(160deg,#181818,#111);border:1px solid var(--border);">
+            <i class="fas fa-spa" style="font-size:1.8rem;color:var(--red);opacity:0.35;"></i>
+            <p style="font-family:var(--font-sub);font-size:0.65rem;letter-spacing:2px;color:var(--grey);text-transform:uppercase;">gallery-yoga.jpg</p>
+          </div>
+          <div class="gallery-overlay"><span>Yoga Studio</span></div>
+        </div>
+
+        <!-- 📸 gallery-lounge.jpg — Members lounge / reception area -->
+        <div class="gallery-item">
+          <img
+            src="assets/images/gallery-lounge.jpg"
+            alt="Basti Gym — Members Lounge"
+            class="responsive-img"
+            loading="lazy"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          />
+          <div class="img-fallback" style="display:none;width:100%;height:100%;min-height:200px;align-items:center;justify-content:center;flex-direction:column;gap:8px;background:linear-gradient(160deg,#181818,#111);border:1px solid var(--border);">
+            <i class="fas fa-trophy" style="font-size:1.8rem;color:var(--red);opacity:0.35;"></i>
+            <p style="font-family:var(--font-sub);font-size:0.65rem;letter-spacing:2px;color:var(--grey);text-transform:uppercase;">gallery-lounge.jpg</p>
+          </div>
+          <div class="gallery-overlay"><span>Members Lounge</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CTA BANNER
+  ══════════════════════════════════════════ -->
+  <section class="cta-banner" id="cta">
+    <div class="container" style="position:relative;z-index:2;">
+      <h2>Ready to Start Your <br/>Transformation?</h2>
+      <p>Join hundreds of members who changed their lives at Basti Gym. Your first step starts today.</p>
+      <a href="contact.html" class="btn-cta">Get Started Today</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <span class="logo-main">BASTI<span>&nbsp;GYM</span></span>
+          <span class="logo-sub">&amp; Fitness Club</span>
+          <p>Empowering the people of Basti to live stronger, healthier, and more confident lives since 2018.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Instagram" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube" title="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://wa.me/919807320940" class="social-icon" aria-label="WhatsApp" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Gym Training</a></li>
+            <li><a href="services.html">Personal Training</a></li>
+            <li><a href="services.html">CrossFit</a></li>
+            <li><a href="services.html">Women Fitness</a></li>
+            <li><a href="services.html">Nutrition Guidance</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span>Gandhi Nagar, Near District Hospital, Basti, Uttar Pradesh</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon"><i class="fas fa-phone"></i></span>
+            <a href="tel:+919807320940" style="color:inherit;">+91 98073 20940</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon"><i class="fas fa-clock"></i></span>
+            <span>Mon–Sun: 5:00 AM – 10:00 PM</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Basti Gym &amp; Fitness Club. All rights reserved.</p>
+        <p>Designed with <span style="color:var(--red);">&#10084;</span> by <a href="https://prateek1833.github.io/" target="_blank">Prateek</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
